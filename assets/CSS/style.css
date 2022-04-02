@@ -1,0 +1,153 @@
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+    width: 100%;
+    margin: 0 auto;
+}
+
+body {
+    background-color: rgb(20,30,40);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.logo {
+    max-width: 600px;
+    margin-bottom: 30px;
+}
+
+.container-input {
+    text-align: center;
+    max-width: 480px;
+    margin: 14px 0;
+}
+
+.container-input span {
+    color: springgreen;
+    font-size: 20pt;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 18px;
+    outline: none;
+    border-radius: 5px;
+    background: #dfdfdf;
+    margin-top: 15px;
+}
+
+.button-cta {
+    height: 40px;
+    background: #11998e;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #38ef7d, #11998e);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #38ef7d, #11998e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+    border-radius: 30px;
+    border: 0;
+    cursor: pointer;
+    margin-top: 40px;
+    font-weight: bold;
+    font-size: 20px;
+    color: #FFF;
+    transition: all 0.5s;
+}
+
+.button-cta:hover {
+    background: #0cebeb;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #29ffc6, #20e3b2, #0cebeb);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #29ffc6, #20e3b2, #0cebeb); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+    transform: scale(1.05);
+}
+
+.password {
+    height: 60px;
+    background-color: rgba(0,0,0, 0.4);
+    border-radius: 4px;
+    /* Display, justify-content e align-items servem para alinhamento tanto na vertical com horizontal */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: springgreen;
+    transition: all 0.5s;
+}
+
+.password:hover {
+    transform: scale(1.05);    /*Isto é, ele cresce 105% ao deixar o mouse sobre ele*/
+}
+
+.container-password {
+    max-width: 480px;
+    margin: 14px 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.title {
+    text-align: center;
+    color: white;
+    font-size: 28px;
+    margin-top: 24px;
+    margin-bottom: 8px;
+}
+
+.tooltip {
+    color: springgreen;
+    position: relative;
+    top: 20px;
+    padding: 6px 8px;
+    background: rgb(15,15,15);
+    text-align: center;
+    font-size: 16px;
+    border-radius: 6px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.hide {
+    display: none;
+}
+
+.container-password:hover .tooltip{
+    visibility: visible;
+    bottom: 50px;
+    opacity: 1;
+}
+
+@media only screen and (max-width: 600px) {
+    * {
+      box-sizing: border-box;
+      font-family: sans-serif;
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    body {
+      margin-top: 200px;
+      padding: 40px;
+      height: 100%;
+      width: auto;
+    }
+
+    .logo {
+        max-width: 400px;
+        margin-bottom: 24px;
+    }
+    
+    .container-input {
+        max-width: 380px;
+        margin: 14px 0;
+        text-align: center;
+    }
+    
+    .container-input span {
+        color: springgreen;
+        font-size: 20px;
+    }    
+}
